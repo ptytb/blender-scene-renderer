@@ -1,0 +1,94 @@
+
+CC=gcc
+CPP=g++
+LD=g++
+
+CCFILES=\
+render.c \
+../mylib/targa.c \
+../mylib/matrix.c \
+../mylib/objldr.c \
+../mylib/filemap.c \
+../mylib/slabvec.c \
+../mylib/mtlldr.c \
+../mylib/texldr.c \
+../mylib/strfeed.c \
+../mylib/objvbo.c \
+../mylib/bvhldr.c \
+../mylib/numparse.c \
+../mylib/win32.c
+
+#../mylib/gaussj.c
+
+CPPFILES=\
+engine.cpp \
+scene.cpp \
+entity.cpp \
+inst.cpp \
+controller.cpp \
+scorp.cpp
+
+LDFILES=\
+engine.o \
+render.o \
+filemap.o \
+matrix.o \
+mtlldr.o \
+objldr.o \
+objvbo.o \
+slabvec.o \
+strfeed.o \
+targa.o \
+texldr.o \
+bvhldr.o \
+numparse.o \
+win32.o \
+scene.o \
+entity.o \
+inst.o \
+controller.o \
+scorp.o
+
+#gaussj.o
+
+CCFLAGS_COMMON= -c -std=gnu99 -pedantic -Wall -Wfatal-errors -march=i686 \
+-I../glut -I../glew/include -DGLEW_STATIC -libgcc-static -static-libgcc
+
+CCFLAGS_RELEASE= -O4 -fno-exceptions -mfpmath=sse -mmmx -msse -msse2
+
+CCFLAGS_DEBUG= -g -O0 -Wextra -Wno-implicit-function-declaration \
+-Wuninitialized -Wunused
+
+CPPFLAGS_COMMON= -c -std=c++0x -pedantic -Wall -Wfatal-errors -march=i686 \
+-I../glut -I../glew/include -DGLEW_STATIC
+
+CPPFLAGS_RELEASE= -O4
+
+CPPFLAGS_DEBUG= -g -O0
+
+LDFLAGS_COMMON= -static -o ../engine.exe -L../glew/lib -L../glut\
+-LC:\Qt\2010.05\mingw\lib 
+#-LC:\cygwin\lib
+
+
+LDFLAGS_RELEASE= -strip-all
+
+LDLIBS= ../glew/lib/glew.o -lopenglut -lglu32 -lopengl32 -lwinmm -lgdi32 
+#-lode
+
+release:
+	@$(CC) $(CCFLAGS_COMMON) $(CCFLAGS_RELEASE) $(CCFILES)
+	@$(CPP) $(CPPFLAGS_COMMON) $(CPPFLAGS_RELEASE) $(CPPFILES)
+	@$(LD) $(LDFLAGS_COMMON) $(LDFLAGS_RELEASE) $(LDFILES) $(LDLIBS)
+
+debug:
+	@$(CC) $(CCFLAGS_COMMON) $(CCFLAGS_DEBUG) $(CCFILES)
+	@$(CPP) $(CPPFLAGS_COMMON) $(CPPFLAGS_DEBUG) $(CPPFILES)
+	@$(LD) $(LDFLAGS_COMMON) $(LDFILES) $(LDLIBS)
+
+clean:
+	@-del *.o
+	@-del *.bc
+
+.PHONY: release debug clean
+

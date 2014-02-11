@@ -1,0 +1,713 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language russian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "Курсовая по компьютерной графике"
+\pdf_author "Пронин И.С."
+\pdf_subject "Скелетная анимация"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Предметный указатель
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\align center
+
+\size large
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pheight%">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+ФГБОУ ВПО МГТУ «СТАНКИН»
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none" width="20pheight%">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset VSpace 2cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size larger
+Кафедра 
+\begin_inset Quotes eld
+\end_inset
+
+Когнитивные Технологии Проектирования
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset VSpace 3cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size largest
+Отчет по курсовому проекту:
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size huge
+Компьютерная графика
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\size large
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0page%">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Выполнил:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+студент группы И-7-4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Пронин И.
+ С.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Принял:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+Яковлев А.
+ В.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset VSpace 6cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Москва, 2012.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+Описание
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Работа представляет собой кроссплатформенный графический движок, позволяющий
+ строить сцены из анимированных и статических моделей с быстрыми расчетами
+ и отрисовкой через VBO (vertex buffer objects).
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Модели хранятся в формате Wavefront OBJ.
+ Поддерживаются команды: подключение библиотеки материалов (mtllib), использован
+ие материала (usemtl), определение вершины (v), треугольника (f), группы
+ треугольников (g).
+ Материалы хранятся в формате MTL.
+ Для материалов поддерживаются фоновая, диффузная, зеркальная компоненты,
+ степень блика, излучение, прозрачность, текстура для диффузной компоненты.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+При выгрузке в VBO модель разбивается по материалам на части для применения
+ к ним различных материалов и текстур при отрисовке.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Анимация загружается из формата BVH (Biovision Hierarchy).
+ В нем 2 секции: дерево костей и данные кадров.
+ Каждая кость в дереве имеет имя, которому соответствует именованная группа
+ треугольников в OBJ-файле.
+ После загрузки я получаю вектор кадров с векторами матриц преобразования
+ для каждой кости.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Меш анимируется за 1 проход.
+ Возможен переход к следующему кадру, перемотка на первый кадр и переход
+ в позу отдыха.
+ Последний используется для переключения между анимациями.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Трансформация меша в локальных коодрдинатах:
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula 
+\begin{eqnarray*}
+M_{L} & = & P\times B\times B_{j-1}^{-1}\times P_{j-1}^{-1},\\
+v_{j+1} & = & M_{L}\times v_{j}.
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+где 
+\begin_inset Formula $v_{j+1}$
+\end_inset
+
+вектор следующего кадра, 
+\begin_inset Formula $v_{j}$
+\end_inset
+
+ текущего, 
+\begin_inset Formula $P$
+\end_inset
+
+ матрица родителя, 
+\begin_inset Formula $B$
+\end_inset
+
+ матрица текущей кости, 
+\begin_inset Formula $B_{j-1}^{-1}$
+\end_inset
+
+и 
+\begin_inset Formula $P_{j-1}^{-1}$
+\end_inset
+
+ обратные матрицы кости и родителя.
+ Родительская матрица вычисляется умножением текущей на родительские при
+ переходе к дочерним элементам.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Для обеспечения возможности свободного положения анимируемого меша в глобальных
+ координатах, необходимо переместить его в начало координат с исходной ориентаци
+ей, применить следующий кадр анимации и вернуть в его глобальные координаты
+ с собственным поворотом.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Трансформация меша в глобальных координатах:
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula 
+\begin{eqnarray*}
+M_{G} & = & G\times M_{L}\times G^{-1},\\
+M_{G} & = & G\times P\times B\times B_{j-1}^{-1}\times P_{j-1}^{-1}\times G^{-1},\\
+v_{j+1} & = & M_{G}\times v_{j}.
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+В модели трансформируются вершины 
+\begin_inset Formula $v$
+\end_inset
+
+ и нормали 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Вектор нормали нужно перенести в вершину перед преобразованием:
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula 
+\begin{eqnarray*}
+\overrightarrow{N} & = & \overrightarrow{v}+\overrightarrow{n},\\
+\overrightarrow{N^{\star}} & = & M_{G}\times\overrightarrow{N},\\
+\overrightarrow{v^{\star}} & = & M_{g}\times\overrightarrow{v}.
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Нормаль снова из начала координат:
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula 
+\[
+\overrightarrow{n^{\star}}=\overrightarrow{N^{\star}}-\overrightarrow{v^{\star}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+Алгоритм расчета кадра анимации
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula 
+\[
+B=M_{Tr}\times M_{Rot}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Так как 
+\begin_inset Formula $M_{Rot}^{-1}\equiv M_{Rot}^{*}$
+\end_inset
+
+, транспонируем матрицу 
+\begin_inset Formula $M_{Rot}$
+\end_inset
+
+ для нахождения обратной:
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula 
+\[
+B^{-1}=M_{Rot}^{\star}\times(-M_{Tr}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Отмена текущего кадра для следующего кадра:
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula 
+\[
+I_{j+1}=B^{-1}\times P^{-1},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+или, используя свойство обратных матриц и метод Гаусса-Жордана, 
+\begin_inset Formula 
+\begin{eqnarray*}
+(A\times B)^{-1} & = & B^{-1}\times A^{-1},\\
+I_{j+1} & = & (P\times B)^{-1}.
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Умножить матрицу кости на родительскую:
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula 
+\[
+B=P\times B
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+если идем по дереву к дочерним, кладу в стек:
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula 
+\begin{eqnarray*}
+P & = & B,\\
+P^{-1} & = & I_{j+1};
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+если переход к родителю, достаю из стека 
+\begin_inset Formula $P$
+\end_inset
+
+ и 
+\begin_inset Formula $P^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula 
+\[
+B=B\times I.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size largest
+Пример работы
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Сцена из ~80000 полигонов.
+ Управление.
+ Зажать ЛКМ+двигать: движение в плоскости XY; Shift+ЛКМ: свободный обзор;
+ ПКМ: движение вдоль OZ; СКМ: двигать источник света в XY; Shift+СКМ: двигать
+ источник света по OZ; Page UP/DOWN ограничение кадров в секунду; Home/Insert
+ ограничение скорости анимации; A, a: Показать или скрыть оси.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename screenshot.png
+	width 90line%
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
